@@ -43,13 +43,27 @@ nav{
     margin-top: 0px;
     margin-left: 10px;
 }
+#search{
+    border: none;
+    background-color: rgb(206, 221, 236);
+    cursor: pointer;
+    border-radius: 13px;
+}
 .navrow a{
     text-decoration: none;
-    color: black;
+    color: rgb(70, 68, 68);
     font-weight: 600;
-    margin: 7px;
-    font-size: 16px;
+    margin: 5px;
+    font-size: 17px;
 }
+.navrow:nth-child(3) a{
+    text-decoration: none;
+    color: rgb(70, 68, 68);
+    font-weight: 600;
+    margin: 1px;
+    font-size: 14px;
+}
+
 .navrow a:nth-child(2){
     color: red;
 }
@@ -202,7 +216,7 @@ nav h3{
     border-radius: 15px;
 }
 
-.producttab1 {}
+
 
 .prodimg>img {
     max-width: 50%;
