@@ -19,7 +19,7 @@
             <a href="">AYURVEDA</a>
             <a href="">CARE PLAN</a>
             <a href="./src/login.html"><img src="./image/user-regular.svg" alt=""></a>
-            <a href=""><h3>offers</h3></a>
+            <a href=""><h3 id="name">offers</h3></a>
             <a href="./src/cart.html"><img src="./image/shopping-cart.png" alt=""></a>
             <a href=""><h3>Need Help ?</h3></a>
 
@@ -28,21 +28,21 @@
             <input type="text" placeholder="New Delhi">
             <div class="search">
                 <input type="text"placeholder="Search for medicine and Health products">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg>
+                <button id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg></button>
             </div>
             <h3>QUICK BUY Get 15% off on medicines</h4>
             <button id="button">QUICK order</button>
         </div>
         <div class="navrow">
-            <p>Health resource center</p>
-            <p>Vitamin & Nutritons</p>
-            <p>Diabetes</p>
-            <p>Healthcare devices</p>
-            <p>Personal care</p>
-            <p>Health condition</p>
-            <p>Ayurveda product</p>
-            <p>Homeopathy</p>
-            <p>Featured</p>
+            <p><a href="./src/product.html"> Health resource center</a></p>
+            <p><a href="./src/product.html">Vitamin & Nutritons</a></p>
+            <p><a href="./src/product.html">Diabetes</a></p>
+            <p><a href="./src/product.html">Healthcare devices</a></p>
+            <p><a href="./src/product.html">Personal care</a></p>
+            <p><a href="./src/product.html">Health condition</a></p>
+            <p><a href="./src/product.html">Ayurveda product</a></p>
+            <p><a href="./src/product.html">Homeopathy</a></p>
+            <p><a href="./src/product.html">Featured</a></p>
         </div>
     </nav>
 
@@ -1023,7 +1023,7 @@
         if (currentItem === carouselItemElements.length - 1) {
             // carouselContainerElement.style.transform = `translateX(0)`;
             // clearInterval(interval);
-            console.log("red ");
+            //console.log("red ");
             currentItem = -1;
         }
     }

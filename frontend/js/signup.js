@@ -10,7 +10,7 @@ form.addEventListener("click",(e)=>{
         name:name1.value,
         password:pass.value
     }
-    fetch("",{
+    fetch("http://localhost:4320/user/add",{
         method:"POST",
         headers:{
             "Content-type":"application/json"

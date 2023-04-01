@@ -1,14 +1,16 @@
-let email=document.getElementById("Email")
+let email1=document.getElementById("Email")
 let pass=document.getElementById("password")
-let form=document.getElementById("form")
+let form1=document.getElementById("form")
 
-form.addEventListener("click",(e)=>{
+
+form1.addEventListener("click",(e)=>{
     e.preventDefault()
     let obj={
-        email:email.value,
+        email:email1.value,
         password:pass.value
     }
-    fetch("",{
+    console.log(obj)
+    fetch("http://localhost:4320/user/login",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -19,6 +21,8 @@ form.addEventListener("click",(e)=>{
     })
     .then((data)=>{
         console.log(data)
+        localStorage.setItem("token",data.token)
+        localStorage.setItem("name1",data.name)
         alert(data.msg)
         window.location.href="../index.html"
     })
