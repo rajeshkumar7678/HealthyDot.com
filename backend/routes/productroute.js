@@ -17,6 +17,31 @@ pro.get("/",async (req,res)=>{
 
 
 
+pro.get("/price1",async(req,res)=>{
+    
+
+    try {
+        let data=await productmodel.find().sort({price:1})
+        res.status(200).send(data)
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+pro.get("/price2",async(req,res)=>{
+    
+
+    try {
+        let data=await productmodel.find().sort({price:-1})
+        res.status(200).send(data)
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+
+
+
 
 
 

@@ -9,8 +9,9 @@ form1.addEventListener("click",(e)=>{
         email:email1.value,
         password:pass.value
     }
+    console.log("hi")
     console.log(obj)
-    fetch("http://localhost:4320/user/login",{
+    fetch("http://localhost:4320/user/login/",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
