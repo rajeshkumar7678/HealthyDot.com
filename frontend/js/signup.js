@@ -10,7 +10,7 @@ form.addEventListener("click",(e)=>{
         name:name1.value,
         password:pass.value
     }
-    fetch("http://localhost:4320/user/add",{
+    fetch(`https://spring-green-centipede-suit.cyclic.app/user/add`,{
         method:"POST",
         headers:{
             "Content-type":"application/json"
