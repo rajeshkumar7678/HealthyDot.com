@@ -229,5 +229,5 @@ function renderCartCards (item,index){
 
 let set=document.getElementById("deliver-button")
 set.addEventListener("click",()=>{
-    window.location.href="./paymentdetalis.html"
+    window.location.href="./card.html"
 })

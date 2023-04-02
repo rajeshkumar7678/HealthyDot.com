@@ -3,7 +3,7 @@ let wholedata
 
 
 function getdata(){
-fetch("http://localhost:4320/home")
+fetch("https://spring-green-centipede-suit.cyclic.app/home")
     .then((res)=>{
         return res.json()
     })
@@ -67,7 +67,7 @@ sort.addEventListener("change", () => {
 if(sort.value==""){
     displayproduct(wholedata)
 }else if(sort.value=="des"){
-    fetch("http://localhost:4320/home/price2")
+    fetch("https://spring-green-centipede-suit.cyclic.app/home/price2")
     .then((res)=>{
         return res.json()
     })
@@ -83,7 +83,7 @@ if(sort.value==""){
     
 
 }else if(sort.value=="ass"){
-    fetch("http://localhost:4320/home/price1")
+    fetch("https://spring-green-centipede-suit.cyclic.app/home/price1")
     .then((res)=>{
         return res.json()
     })
@@ -151,7 +151,7 @@ filterbtn3.addEventListener("click",()=>{
   
   
   function showbrand(){
-    let Box=document.getElementById("Box").checked
+  let Box=document.getElementById("Box").checked
   let Bottle=document.getElementById("Bottle").checked
   let Jar=document.getElementById("Jar").checked
   let tin=document.getElementById("tin").checked
