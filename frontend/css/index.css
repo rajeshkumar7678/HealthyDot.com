@@ -18,10 +18,12 @@ body{
 nav{
     
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
+
 
 .navrow{
     width: 98%;
@@ -974,5 +976,11 @@ input:focus {
     .footer .footer-center i {
       margin-left: 0;
     }
+  }
+
+  #name1{
+    color: #0a8de4;
+    padding: 10px 20px;
+    font-weight: 900;
   }
 

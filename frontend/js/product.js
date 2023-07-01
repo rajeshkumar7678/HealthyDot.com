@@ -1,9 +1,11 @@
+const baseurl="https://difficult-turtleneck-shirt-lamb.cyclic.app"
+
 let main=document.querySelector("#append")
 let wholedata
 
 
 function getdata(){
-fetch("https://spring-green-centipede-suit.cyclic.app/home")
+fetch(`${baseurl}/home`)
     .then((res)=>{
         return res.json()
     })

@@ -1,3 +1,5 @@
+const baseurl="http://localhost:4320"
+
 let email=document.getElementById("Email")
 let name1=document.getElementById("Name")
 let pass=document.getElementById("password")
@@ -10,7 +12,7 @@ form.addEventListener("click",(e)=>{
         name:name1.value,
         password:pass.value
     }
-    fetch(`https://spring-green-centipede-suit.cyclic.app/user/add`,{
+    fetch(`${baseurl}/user/add`,{
         method:"POST",
         headers:{
             "Content-type":"application/json"

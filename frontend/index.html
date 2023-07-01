@@ -18,7 +18,7 @@
             <a href="">COVID-19</a>
             <a href="">AYURVEDA</a>
             <a href="">CARE PLAN</a>
-            <a href="./src/login.html"><img src="./image/user-regular.svg" alt=""></a>
+            <div id="name1"><a href="./src/login.html"><img src="./image/user-regular.svg" alt=""></a></div>
             <a href=""><h3 id="name">offers</h3></a>
             <a href="./src/cart.html"><img src="./image/shopping-cart.png" alt=""></a>
             <a href=""><h3>Need Help ?</h3></a>
@@ -1047,6 +1047,13 @@
 
 </body>
 <script>
+    let divname=document.getElementById("name1")
+    let name=localStorage.getItem("name1")
+    if(name){
+        divname.innerText=name
+    }
+
+
     // carousel
 
     const carouselContainerElement = document.querySelector(".carousel-container ");

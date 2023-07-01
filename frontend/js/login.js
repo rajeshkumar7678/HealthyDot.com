@@ -1,3 +1,5 @@
+const baseurl="http://localhost:4320"
+
 let email1=document.getElementById("Email")
 let pass=document.getElementById("password")
 let form1=document.getElementById("form")
@@ -11,7 +13,7 @@ form1.addEventListener("click",(e)=>{
     }
     console.log("hi")
     console.log(obj)
-    fetch("https://spring-green-centipede-suit.cyclic.app/user/login/",{
+    fetch(`${baseurl}/user/login`,{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -22,10 +24,15 @@ form1.addEventListener("click",(e)=>{
     })
     .then((data)=>{
         console.log(data)
-        localStorage.setItem("token",data.token)
-        localStorage.setItem("name1",data.name)
-        alert(data.msg)
-        window.location.href="../index.html"
+        if(data.name){
+            localStorage.setItem("token",data.token)
+            localStorage.setItem("name1",data.name)
+            alert(data.msg)
+            window.location.href="../index.html"
+        }else{
+            alert(data.msg)
+        }
+        
     })
     .catch((err)=>{
         console.log(err)
