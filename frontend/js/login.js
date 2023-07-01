@@ -1,4 +1,4 @@
-const baseurl="http://localhost:4320"
+const baseurl="https://difficult-turtleneck-shirt-lamb.cyclic.app"
 
 let email1=document.getElementById("Email")
 let pass=document.getElementById("password")
